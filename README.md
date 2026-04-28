@@ -8,7 +8,7 @@ A dynamic web application built with Node.js and Express that allows users to fe
 node-weather-app/
 ├── public/          # Static assets (CSS, client-side JS, images)
 ├── src/             # Application source code (app.js and utilities)
-├─�� templets/        # Handlebars templates (views and partials)
+├── templets/        # Handlebars templates (views and partials)
 ├── package.json     # Project dependencies and scripts
 └── .gitignore       # Files to be excluded from Git
 ```
@@ -78,6 +78,13 @@ The project uses Handlebars partials for consistent UI elements. You can find th
 | "Unable to find location" | Invalid search term | Check the spelling of the city or address |
 | "Unable to connect" | Network or API Key error | Check your internet and verify your API keys in the .env file |
 | Styles not loading | Static path issue | Ensure the public folder is correctly served in src/app.js |
+
+## ☁️ Deployment
+
+This application is configured for deployment on platforms like Heroku.
+
+- Set your environment variables in the Heroku Dashboard under **Settings > Config Vars**.
+- Or use the CLI: `heroku config:set WEATHERSTACK_API_KEY=your_key_here`.
 
 ## 📝 License
 
