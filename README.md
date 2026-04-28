@@ -1,6 +1,6 @@
 # Weather App (Node.js)
 
-A dynamic web application built with Node.js and Express that allows users to fetch real-time weather information for any location. This project demonstrates the use of asynchronous programming, API integration, and server-side rendering with Handlebars.
+A dynamic web application built with Node.js and Express that allows users to fetch real-time weather information for any location. This project demonstrates the use of asynchronous programming, API[...]
 
 ## 📁 Project Structure
 
@@ -48,7 +48,21 @@ Open your browser and navigate to `http://localhost:3000`
 
 ## 🛠️ API & Utility Documentation
 
-[Add your API and utility documentation here]
+The application relies on two core utility modules located in the src/utils directory:
+
+### 1. Geocoding Utility (geocode.js)
+Translates plain-text addresses into geographic coordinates.
+
+**Input:** A location string (e.g., "New York").
+
+**Output:** Returns an object containing latitude, longitude, and the formatted location name.
+
+### 2. Weather Forecast Utility (forecast.js)
+Fetches the actual weather data using coordinates.
+
+**Input:** Latitude and Longitude.
+
+**Data Returned:** Current temperature, precipitation probability, and a general weather summary.
 
 ## 📝 License
 
