@@ -1,6 +1,6 @@
 # Weather App (Node.js)
 
-A dynamic web application built with Node.js and Express that allows users to fetch real-time weather information for any location. This project demonstrates the use of asynchronous programming, API[...]
+A dynamic web application built with Node.js and Express that allows users to fetch real-time weather information for any location. This project demonstrates the use of asynchronous programming, AP[...]
 
 ## 📁 Project Structure
 
@@ -8,7 +8,7 @@ A dynamic web application built with Node.js and Express that allows users to fe
 node-weather-app/
 ├── public/          # Static assets (CSS, client-side JS, images)
 ├── src/             # Application source code (app.js and utilities)
-├── templets/        # Handlebars templates (views and partials)
+├─�� templets/        # Handlebars templates (views and partials)
 ├── package.json     # Project dependencies and scripts
 └── .gitignore       # Files to be excluded from Git
 ```
@@ -63,6 +63,21 @@ Fetches the actual weather data using coordinates.
 **Input:** Latitude and Longitude.
 
 **Data Returned:** Current temperature, precipitation probability, and a general weather summary.
+
+## 🔧 Customization (Partials)
+
+The project uses Handlebars partials for consistent UI elements. You can find these in the templets/partials folder:
+
+- **Header:** Modify `header.hbs` to change the navigation menu or app title.
+- **Footer:** Modify `footer.hbs` to update copyright information or author details.
+
+## ❓ Troubleshooting
+
+| Issue | Potential Cause | Solution |
+|-------|-----------------|----------|
+| "Unable to find location" | Invalid search term | Check the spelling of the city or address |
+| "Unable to connect" | Network or API Key error | Check your internet and verify your API keys in the .env file |
+| Styles not loading | Static path issue | Ensure the public folder is correctly served in src/app.js |
 
 ## 📝 License
 
