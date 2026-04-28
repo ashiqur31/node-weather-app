@@ -88,4 +88,4 @@ This application is configured for deployment on platforms like Heroku.
 
 ## 📝 License
 
-[Add your license information here]
+This project is open-source. Feel free to fork and modify!
